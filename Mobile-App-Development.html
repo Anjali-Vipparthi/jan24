@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile App Development Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #45a049;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        a {
+            color: #45a049;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .button {
+            display: inline-block;
+            background-color: #45a049;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        form input, form select, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mobile App Development Course</h1>
+        <p>Learn to create feature-rich mobile apps for iOS and Android platforms.</p>
+    </header>
+    <div class="container">
+        <h2>Course Details</h2>
+        <p>
+            This live online course is designed for aspiring mobile developers to master the art of building mobile applications. 
+            You'll gain hands-on experience in creating apps using:Languages: Java, Kotlin, Swift, and Dart,Frameworks: Flutter and React Native,UI/UX Design for mobile applicationsIntegration with APIs and databases.
+        </p>
+        <ul>
+            <li>Languages: Java, Kotlin, Swift, and Dart</li>
+            <li>Frameworks: Flutter and React Native</li>
+            <li>UI/UX Design for mobile applications</li>
+            <li>Integration with APIs and databases</li>
+        </ul>
+        <h3>Course Fee:</h3>
+        <p>₹7,000 (Includes all materials and resources)</p>
+        <h3>Course Duration:</h3>
+        <p> <strong>10 weeks</strong></p>
+        <h3>Register Now:</h3>
+    </section>
+    <form action="submit_registration.php" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        <label for="experience">Experience Level:</label>
+        <select id="experience" name="experience" required>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+        <button type="submit">Register</button>
+    </form>
+    <p>Have questions? <a href="mailto:support@example.com">Contact us</a>.</p>
+    </div>
+</body>
+</html>

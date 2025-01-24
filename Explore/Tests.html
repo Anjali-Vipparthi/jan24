@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- LightSlider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"
+        integrity="sha512-yJHCxhu8pTR7P2UgXFrHvLMniOAL5ET1f5Cj+/dzl+JIlGTh5Cz+IeklcXzMavKvXP8vXqKMQyZjscjf3ZDfGA=="
+        crossorigin="anonymous" />
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- LightSlider.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"
+        integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w=="
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Bundle with Popper.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
+        integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#review-slider-content').lightSlider({
+                auto: true,
+                loop: true,
+                responsive: [{
+                        breakpoint: 800,
+                        settings: {
+                            item: 3,
+                            slideMove: 1,
+                            slideMargin: 6,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            item: 1,
+                            slideMove: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+    <title>Home Page</title>
+</head>
+<style>
+    /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+
+/* Page Content */
+.content {
+    padding: 40px 0;
+}
+
+.page-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.intro-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.test-courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.test-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.test-item:hover {
+    transform: translateY(-10px);
+}
+
+.test-item h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.test-item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #4CAF50;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4CAF50;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+</style>
+
+
+<body>
+   
+
+    <!-- Page Content -->
+    <section class="content">
+        <div class="container">
+            <h1 class="page-title">Tests</h1>
+            <p class="intro-text">Test your knowledge and sharpen your skills with our expert-designed coding tests across various domains. These tests will help you assess your progress and proficiency in technology and coding fields.</p>
+
+            <div class="test-courses">
+                <div class="test-item">
+                    <h3>Full Stack Development Test</h3>
+                    <p>Evaluate your expertise in both frontend and backend technologies including HTML, CSS, JavaScript, Node.js, React, and more.</p>
+                    <a href="full-stack-test.html" class="btn">Take Test</a>
+                </div>
+
+                <div class="test-item">
+                    <h3>Algorithm & Data Structures Test</h3>
+                    <p>Test your understanding of algorithms, data structures, and problem-solving skills using Python, JavaScript, or C++.</p>
+                    <a href="algorithm-test.html" class="btn">Take Test</a>
+                </div>
+
+                <div class="test-item">
+                    <h3>Database Management Test</h3>
+                    <p>Challenge yourself with SQL queries, database design, and normalization. Test your knowledge of MySQL, PostgreSQL, MongoDB, and more.</p>
+                    <a href="database-test.html" class="btn">Take Test</a>
+                </div>
+
+                <div class="test-item">
+                    <h3>ReactJS Skills Test</h3>
+                    <p>Assess your proficiency in ReactJS, including components, hooks, state management, and advanced concepts in modern JavaScript frameworks.</p>
+                    <a href="reactjs-test.html" class="btn">Take Test</a>
+                </div>
+
+                <div class="test-item">
+                    <h3>Python Programming Test</h3>
+                    <p>Test your knowledge of Python programming, including syntax, OOP concepts, libraries, and frameworks like Django and Flask.</p>
+                    <a href="python-test.html" class="btn">Take Test</a>
+                </div>
+
+                <div class="test-item">
+                    <h3>DevOps & Cloud Infrastructure Test</h3>
+                    <p>Evaluate your understanding of cloud platforms like AWS, Azure, Docker, Kubernetes, and continuous integration/deployment techniques.</p>
+                    <a href="devops-test.html" class="btn">Take Test</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 SkillsArena. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

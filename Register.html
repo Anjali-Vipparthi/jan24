@@ -1,6 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,99 +62,109 @@
         });
     </script>
 
-    <title>E-Books</title>
+    <title>Home Page</title>
 </head>
 <style>
-    /* General Styles */
-/* General Styles */
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-}
-
-h1, .lead {
-    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
 }
 
 
 
-/* Page Heading */
-.page-heading {
-    background-color: #4CAF50;
-    color: white;
-    padding: 60px ;
-    margin-top: 70px; /* Added margin-top to ensure it doesn't overlap with fixed navbar */
+/* Register Section */
+.register-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
 }
 
-.page-heading h1 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.page-heading p {
-    font-size: 1.2rem;
-}
-
-/* eBooks Section */
-.ebooks-section {
-    background-color: #ffffff;
-    padding: 50px 0;
-}
-
-.ebook-card {
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.ebook-card img {
-    border-bottom: 1px solid #ddd;
-    height: 200px;
-    object-fit: cover;
-}
-
-.ebook-card .card-body {
-    padding: 20px;
-}
-
-.ebook-card .card-title {
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.ebook-card .card-text {
-    font-size: 1rem;
-    color: #6c757d;
+.register-section .section-title {
+    font-size: 32px;
+    font-weight: 600;
     margin-bottom: 20px;
+    color: #333;
 }
 
-.ebook-card .btn-primary {
+.register-section .intro-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.register-form .form-group {
+    text-align: left;
+}
+
+.register-form .form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.register-form .form-group input,
+.register-form .form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.register-form .btn {
     background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
     border: none;
 }
 
-.ebook-card .btn-primary:hover {
-    background-color: #45a049;
+.register-form .btn:hover {
+    background-color: #4CAF50;
 }
 
-/* Footer Styles */
-.footer {
-    background-color: #343a40;
-}
-
-.footer p {
-    margin: 0;
-    font-size: 1rem;
+/* Footer Styling */
+footer {
+    background-color: #4CAF50;
+    padding: 15px 0;
+    text-align: center;
     color: #fff;
 }
 
-/* Ensure no content is hidden behind the navbar */
-body {
-    padding-top: 50px; /* Adjust according to navbar height */
+footer p {
+    font-size: 14px;
 }
 
 
 </style>
+
+
+
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-nav fixed-top">
@@ -163,7 +180,7 @@ body {
                         <a href="index.html" class="nav-link "  href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="Ebooks.html" class="nav-link active" aria-current="page" href="#">E-books</a>
+                        <a href="Ebooks.html" class="nav-link"  href="#">E-books</a>
                     </li>
                     
                     <li class="nav-item dropdown">
@@ -206,67 +223,38 @@ body {
     </nav>
     <!-- navbar -->
 
-</head>
-<body>
-
-    
-
-    <!-- Page Heading -->
-    <section class="page-heading text-center py-5">
+    <!-- Register Section -->
+    <section class="register-section">
         <div class="container">
-            <h1 class="display-4">Explore Our E-Books</h1>
-            <p class="lead">Get access to the best e-books that help you master new skills in the world of technology and development.</p>
+            <h1 class="section-title">Register Online</h1>
+            <p class="intro-text">Join our community of tech enthusiasts and start learning cutting-edge technology and coding courses today!</p>
+            
+            <form action="#" class="register-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="course">Select Course</label>
+                    <select id="course" name="course">
+                        <option value="web-development">Web Development</option>
+                        <option value="data-science">Data Science</option>
+                        <option value="ai-ml">AI & Machine Learning</option>
+                        <option value="cyber-security">Cybersecurity</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Register Now</button>
+            </form>
         </div>
     </section>
 
-    <!-- eBooks Section -->
-    <section class="ebooks-section py-5">
-        <div class="container">
-            <div class="row">
-                <!-- E-book 1 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card ebook-card shadow-sm">
-                        <img class="img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/514y5tqUuSL.jpg" alt="Book cover of Python for Everybody: Exploring Data in Python 3 by Dr. Charles Russell Severance">
-                        <div class="card-body">
-                            <h5 class="card-title">Mastering Python</h5>
-                            <p class="card-text">An advanced guide for mastering Python programming, including real-world projects and best practices.</p>
-                            <a href="Download-Ebook/DE1.html" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- E-book 2 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card ebook-card shadow-sm">
-                        <img src="https://th.bing.com/th/id/OIP.tQfqB5foL4wrKqoej-440QAAAA?rs=1&amp;pid=ImgDetMain" alt="Web Development with Django - Second Edition | ebook | Web Development" class=" nofocus" tabindex="0" height="500" aria-label="Web Development with Django - Second Edition | ebook | Web Development" role="button" data-bm="6">
-                        <div class="card-body">
-                            <h5 class="card-title">Web Development with Django</h5>
-                            <p class="card-text">Learn how to build responsive websites using React, including JSX, components, and hooks.</p>
-                            <a href="Download-Ebook/DE2.html" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- E-book 3 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card ebook-card shadow-sm">
-                        <img src="https://m.media-amazon.com/images/I/81CTJE2fOVL.SL1500.jpg" alt="Buy Introduction to Database Systems: v.2 (An Introduction to Data Base ..."  class=" nofocus" tabindex="0" aria-label="Buy Introduction to Database Systems: v.2 (An Introduction to Data Base ..." role="button">
-                        <div class="card-body">
-                            <h5 class="card-title">Database Management Systems</h5>
-                            <p class="card-text">A comprehensive guide to understanding and managing relational databases using SQL and NoSQL systems.</p>
-                            <a href="Download-Ebook/DE3.html" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="footer bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2025 SkillsArena. All rights reserved.</p>
-        </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SkillsArena. All Rights Reserved.</p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

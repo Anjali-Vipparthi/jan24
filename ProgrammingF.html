@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Fundamentals Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #45a049;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        a {
+            color: #45a049;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .button {
+            display: inline-block;
+            background-color: #45a049;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        form input, form select, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Programming Fundamentals Course</h1>
+    </header>
+    <div class="container">
+        <h2>Course Details</h2>
+        <p>
+            The Programming Fundamentals course is designed to introduce you to the core concepts of programming. 
+            Learn the basics of coding, variables, data types, loops, functions, and algorithms using popular 
+            programming languages like Python, Java, or C++. This course is perfect for beginners looking to kickstart 
+            their journey into software development.
+        </p>
+        <h3>Key Highlights:</h3>
+        <ul>
+            <li>Introduction to core programming concepts</li>
+            <li>Hands-on coding exercises</li>
+            <li>Practical projects for real-world applications</li>
+            <li>Expert instructors with industry experience</li>
+        </ul>
+        <h3>Course Fee:</h3>
+        <p>₹5,000 (Includes all materials and resources)</p>
+        <h3>Course Duration:</h3>
+        <p>4 Weeks (Weekends only)</p>
+        <h3>Register Now:</h3>
+        <form action="submit_registration.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            
+            <label for="language">Preferred Programming Language:</label>
+            <select id="language" name="language">
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="c++">C++</option>
+            </select>
+            
+            <button type="submit">Register</button>
+        </form>
+        <p>Have questions? <a href="mailto:support@example.com">Contact us</a>.</p>
+    </div>
+</body>
+</html>
