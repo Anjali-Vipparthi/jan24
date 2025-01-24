@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Course</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Course Details Section -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-lg">
+                    <img src="https://source.unsplash.com/random/1200x400" class="card-img-top" alt="Web Development">
+                    <div class="card-body">
+                        <h3 class="card-title">Web Development</h3>
+                        <p class="card-text">
+                            This course covers the fundamentals of web development, including HTML, CSS, JavaScript, and modern frontend frameworks like React. 
+                            The course also dives into backend development using Node.js or Django, enabling learners to build full-stack web applications.
+                        </p>
+
+                        <h5>Course Duration: 8 Weeks</h5>
+                        <h5>Flexibility: Self-paced with optional live sessions</h5>
+
+                        <h4>Course Highlights:</h4>
+                        <ul>
+                            <li>Master HTML, CSS, and JavaScript</li>
+                            <li>Learn frontend development with React</li>
+                            <li>Understand backend development with Node.js or Django</li>
+                            <li>Build full-stack web applications</li>
+                            <li>Hands-on projects and real-world scenarios</li>
+                        </ul>
+
+                        <button class="btn btn-success btn-lg" onclick="startCourse()">Start Course</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function startCourse() {
+            alert('You have started the Web Development course!');
+            // You can replace the alert with redirect logic, such as window.location = 'course-dashboard.html';
+        }
+    </script>
+
+</body>
+</html>

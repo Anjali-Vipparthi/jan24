@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- LightSlider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"
+        integrity="sha512-yJHCxhu8pTR7P2UgXFrHvLMniOAL5ET1f5Cj+/dzl+JIlGTh5Cz+IeklcXzMavKvXP8vXqKMQyZjscjf3ZDfGA=="
+        crossorigin="anonymous" />
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- LightSlider.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"
+        integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w=="
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Bundle with Popper.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
+        integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#review-slider-content').lightSlider({
+                auto: true,
+                loop: true,
+                responsive: [{
+                        breakpoint: 800,
+                        settings: {
+                            item: 3,
+                            slideMove: 1,
+                            slideMargin: 6,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            item: 1,
+                            slideMove: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+    <title>E-Books</title>
+</head>
+<style>
+    /* General Styles */
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+h1, .lead {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    z-index: 10; /* Ensure navbar stays on top */
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #f8f9fa !important;
+}
+
+/* Page Heading */
+.page-heading {
+    background-color: #4CAF50;
+    color: white;
+    padding: 60px ;
+    margin-top: 70px; /* Added margin-top to ensure it doesn't overlap with fixed navbar */
+}
+
+.page-heading h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.page-heading p {
+    font-size: 1.2rem;
+}
+
+/* eBooks Section */
+.ebooks-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.ebook-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ebook-card img {
+    border-bottom: 1px solid #ddd;
+    height: 200px;
+    object-fit: cover;
+}
+
+.ebook-card .card-body {
+    padding: 20px;
+}
+
+.ebook-card .card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.ebook-card .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.ebook-card .btn-primary {
+    background-color: #4CAF50;
+    border: none;
+}
+
+.ebook-card .btn-primary:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #343a40;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Ensure no content is hidden behind the navbar */
+body {
+    padding-top: 50px; /* Adjust according to navbar height */
+}
+
+
+</style>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-nav fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">SkillsArena</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link"  href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Ebooks.html" class="nav-link active" aria-current="page" href="#">E-books</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="true">
+                            Explore
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> 
+                    <li class="nav-item">
+                        <a href="Career.html" class="nav-link" href="#"  >Careers/Join Us</a>
+                    </li>
+                    
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-success btn-sm" data-toggle="modal"
+                        data-target="#registerOnline">Register Online</a>
+                </div>
+                <div class="nav-item">
+                    <a href="About.html" class="nav-link" href="#" >About Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+</head>
+<body>
+
+    
+
+    <!-- Page Heading -->
+    <section class="page-heading text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Explore Our E-Books</h1>
+            <p class="lead">Get access to the best e-books that help you master new skills in the world of technology and development.</p>
+        </div>
+    </section>
+
+    <!-- eBooks Section -->
+    <section class="ebooks-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- E-book 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card ebook-card shadow-sm">
+                        <img class="img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/514y5tqUuSL.jpg" alt="Book cover of Python for Everybody: Exploring Data in Python 3 by Dr. Charles Russell Severance">
+                        <div class="card-body">
+                            <h5 class="card-title">Mastering Python</h5>
+                            <p class="card-text">An advanced guide for mastering Python programming, including real-world projects and best practices.</p>
+                            <a href="#" class="btn btn-primary">Download eBook</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- E-book 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card ebook-card shadow-sm">
+                        <img itemprop="image" src="//covers.openlibrary.org/b/id/8508414-M.jpg" alt="Cover of: Full-Stack React Projects: Modern web development using React 16, Node, Express, and MongoDB" title="Cover of: Full-Stack React Projects: Modern web development using React 16, Node, Express, and MongoDB">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development with React</h5>
+                            <p class="card-text">Learn how to build responsive websites using React, including JSX, components, and hooks.</p>
+                            <a href="#" class="btn btn-primary">Download eBook</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- E-book 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card ebook-card shadow-sm">
+                        <img src="https://source.unsplash.com/500x300/?book,databases" class="card-img-top" alt="E-book Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Database Management Systems</h5>
+                            <p class="card-text">A comprehensive guide to understanding and managing relational databases using SQL and NoSQL systems.</p>
+                            <a href="#" class="btn btn-primary">Download eBook</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 SkillsArena. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
